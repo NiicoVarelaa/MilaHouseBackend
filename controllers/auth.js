@@ -75,7 +75,7 @@ const loginUsuario = async (req, res) => {
         if (!validarPassword){
             return res.status(400).json({
                 ok: false,
-                msg: "El email o password son Incorrectos"
+                msg: "El Email o Password son Incorrectos"
             });
         }
 
