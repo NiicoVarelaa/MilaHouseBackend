@@ -2,9 +2,6 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();
 
-const credenciales = process.env.DB_CONECCTION;
-console.log('db',credenciales);
-
 const dbConecction = async () => {
     try {   
         await mongoose.connect(process.env.DB_CONECCTION, {
