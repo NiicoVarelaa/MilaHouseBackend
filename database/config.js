@@ -10,7 +10,7 @@ const dbConecction = async () => {
         });
         console.log("DB Conectado");
     } catch (error) {
-        console.log(error);
+        console.log('error',error);
         throw new Error("No se pudo inicializar la base de datos")
     }
 };
